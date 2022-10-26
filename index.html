@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Compatibilidade de Tipos Sanguíneos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<header>
+    <h1>Calculadora de Compatibilidade de Tipos Sanguíneos</h1>
+</header>
+
+<body>
+
+    <form>
+        <div>
+            <label>Informe o seu tipo sanguíneo: </label>
+            <select id="tipo-sanguineo">
+                <option value="o-negativo">O-</option>
+                <option value="o-positivo">O+</option>
+                <option value="b-negativo">B-</option>
+                <option value="b-positivo">B+</option>
+                <option value="a-negativo">A-</option>
+                <option value="a-positivo">A+</option>
+                <option value="ab-negativo">AB-</option>
+                <option value="ab-positivo">AB+</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Você é doador ou receptor? </label>
+            <select id="doador-ou-receptor">
+                <option value="doador">Doador</option>
+                <option value="receptor">Receptor</option>
+            </select>
+        </div>
+
+        <div>
+            <input type="button" id="botao" name="botao" value="Verificar Compatibilidade"
+                onclick="verificarCompatibilidade()">
+        </div>
+    </form>
+
+</body>
+<footer>
+    <h2>Para mais informações sobre tipos sanguíneos, acesse <a
+            href="https://www.tuasaude.com/tipos-de-sangue/">aqui</a>.</h2>
+    <p>Site produzido por <a href="https://github.com/theodomi">Theo Dominique</a>.</p>
+</footer>
+
+</html>
