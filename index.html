@@ -2,56 +2,81 @@
 <html lang="pt-BR">
 
 <head>
+    <!-- meta tags basicas -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Calculadora de Compatibilidade de Tipos Sanguíneos">
+    <meta name="description"
+        content="Para saber a compatibilidade do seu tipo sanguíneo em relação ao o que pode receber e a quem pode doar, este site pode te ajudar! Basta selecionar o seu tipo sanguíneo e as opções tanto de doador quanto receptor que lhe damos a resposta automaticamente.">
     <title>Calculadora de Compatibilidade de Tipos Sanguíneos</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="" />
+    <meta property="twitter:title" content="Calculadora de Compatibilidade de Tipos Sanguíneos" />
+    <meta property="twitter:description" content="Descubra a compatibilidade do seu tipo sanguíneo!" />
+    <meta property="twitter:image" content="" />
 </head>
 <header>
     <h1>Calculadora de Compatibilidade de Tipos Sanguíneos</h1>
 </header>
 
 <body>
-
+    <div class="center">
+        <p id="description">Para saber a compatibilidade do seu tipo sanguíneo em relação ao o que pode receber e a quem
+            pode doar, este site
+            pode te ajudar! Basta selecionar o seu tipo sanguíneo e as opções tanto de doador quanto receptor que lhe
+            damos
+            a resposta automaticamente.</p>
+    </div>
     <form>
-        <div>
-            <label>Informe o seu tipo sanguíneo: </label>
-            <select id="tipo-sanguineo">
-                <option value="o-negativo">O-</option>
-                <option value="o-positivo">O+</option>
-                <option value="b-negativo">B-</option>
-                <option value="b-positivo">B+</option>
-                <option value="a-negativo">A-</option>
-                <option value="a-positivo">A+</option>
-                <option value="ab-negativo">AB-</option>
-                <option value="ab-positivo">AB+</option>
-            </select>
-        </div>
+        <div class="center">
+            <section>
 
-        <div>
-            <label>Você é doador ou receptor? </label>
-            <select id="doador-ou-receptor">
-                <option value="doador">Doador</option>
-                <option value="receptor">Receptor</option>
-            </select>
+                <label>Informe o seu tipo sanguíneo: </label>
+                <div>
+                    <select id="tipo-sanguineo">
+                        <option value="o-negativo">O-</option>
+                        <option value="o-positivo">O+</option>
+                        <option value="b-negativo">B-</option>
+                        <option value="b-positivo">B+</option>
+                        <option value="a-negativo">A-</option>
+                        <option value="a-positivo">A+</option>
+                        <option value="ab-negativo">AB-</option>
+                        <option value="ab-positivo">AB+</option>
+                    </select>
+                </div>
+            </section>
         </div>
-
-        <div>
-            <input type="button" id="botao" name="botao" value="Verificar Compatibilidade"
-                onclick="verificarCompatibilidade()">
+        <div class="center">
+            <section>
+                <label>Você é doador ou receptor? </label>
+                <div>
+                    <select id="doador-ou-receptor">
+                        <option value="doador">Doador</option>
+                        <option value="receptor">Receptor</option>
+                    </select>
+                </div>
+            </section>
+        </div>
+        <div class="center">
+            <section>
+                <input type="button" id="botao" name="botao" value="Verificar Compatibilidade"
+                    onclick="verificarCompatibilidade()">
+            </section>
         </div>
     </form>
 
 </body>
 <footer>
-    <h2>Para mais informações sobre tipos sanguíneos, acesse <a
-            href="https://www.tuasaude.com/tipos-de-sangue/">aqui</a>.</h2>
-    <p>Site produzido por <a href="https://github.com/theodomi">Theo Dominique</a>.</p>
+    <h2 class="footer">Para mais informações sobre tipos sanguíneos, acesse<a
+            href="https://www.tuasaude.com/tipos-de-sangue/">aqui</a></h2>
+    <p class="footer">Site produzido por<a href="https://github.com/theodomi">Theo Dominique</a></p>
 </footer>
 
 </html>
