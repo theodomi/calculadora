@@ -27,49 +27,42 @@
 </header>
 
 <body>
-    <div class="center">
-        <p id="description">Para saber a compatibilidade do seu tipo sanguíneo em relação ao o que pode receber e a quem
-            pode doar, este site
-            pode te ajudar! Basta selecionar o seu tipo sanguíneo e as opções tanto de doador quanto receptor que lhe
-            damos
-            a resposta automaticamente.</p>
-    </div>
-    <form>
-        <div class="center">
-            <section>
+    <p id="description">Para saber a compatibilidade do seu tipo sanguíneo em relação ao o que pode receber e a quem pode doar, este site
+        pode te ajudar! Basta selecionar o seu tipo sanguíneo e as opções tanto de doador quanto receptor que lhe damos
+        a resposta automaticamente.</p>
 
-                <label>Informe o seu tipo sanguíneo: </label>
-                <div>
-                    <select id="tipo-sanguineo">
-                        <option value="o-negativo">O-</option>
-                        <option value="o-positivo">O+</option>
-                        <option value="b-negativo">B-</option>
-                        <option value="b-positivo">B+</option>
-                        <option value="a-negativo">A-</option>
-                        <option value="a-positivo">A+</option>
-                        <option value="ab-negativo">AB-</option>
-                        <option value="ab-positivo">AB+</option>
-                    </select>
-                </div>
-            </section>
-        </div>
-        <div class="center">
-            <section>
-                <label>Você é doador ou receptor? </label>
-                <div>
-                    <select id="doador-ou-receptor">
-                        <option value="doador">Doador</option>
-                        <option value="receptor">Receptor</option>
-                    </select>
-                </div>
-            </section>
-        </div>
-        <div class="center">
-            <section>
-                <input type="button" id="botao" name="botao" value="Verificar Compatibilidade"
-                    onclick="verificarCompatibilidade()">
-            </section>
-        </div>
+    <form>
+        <section>
+
+            <label>Informe o seu tipo sanguíneo: </label>
+            <div>
+                <select id="tipo-sanguineo">
+                    <option value="o-negativo">O-</option>
+                    <option value="o-positivo">O+</option>
+                    <option value="b-negativo">B-</option>
+                    <option value="b-positivo">B+</option>
+                    <option value="a-negativo">A-</option>
+                    <option value="a-positivo">A+</option>
+                    <option value="ab-negativo">AB-</option>
+                    <option value="ab-positivo">AB+</option>
+                </select>
+            </div>
+        </section>
+
+        <section>
+            <label>Você é doador ou receptor? </label>
+            <div>
+                <select id="doador-ou-receptor">
+                    <option value="doador">Doador</option>
+                    <option value="receptor">Receptor</option>
+                </select>
+            </div>
+        </section>
+
+        <section>
+            <input type="button" id="button" name="button" value="Verificar Compatibilidade"
+                onclick="verificarCompatibilidade()">
+        </section>
     </form>
 
 </body>

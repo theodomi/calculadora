@@ -6,6 +6,11 @@
     text-align: center;
 }
 
+body {
+  margin: auto 15%;
+}
+
+/* text */
 h1, 
 h2,
 p,
@@ -19,10 +24,6 @@ h1 {
     font-size: 30px;
 }
 
-body {
-  margin: auto 15%;
-}
-
 a {
     color: #075FDF;
 }
@@ -31,6 +32,7 @@ a {
     font-size: small;
 }
 
+/* form */
 select {
     background-color: #9EC6FF;
     color: #fff;
@@ -45,7 +47,7 @@ select {
     max-width: 200px;
 }
 
-#botao {
+#button {
     background-color: #5F9DF7;
     color: #fff;
     border: none;
@@ -57,7 +59,7 @@ select {
     cursor: pointer;
 }
 
-/* teste */
+/* for cellphones */
 @media (max-width: 600px) {
   body {
     margin: auto 5px;
@@ -68,7 +70,7 @@ select {
     font-size: 20px;
   }
 
-  #botao {
+  #button {
     font-size: 25px;
   }
 
